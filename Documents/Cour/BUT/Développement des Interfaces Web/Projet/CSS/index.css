@@ -1,0 +1,313 @@
+body, html {
+    background-color: white;
+    margin: 0px;
+    font-family: 'Trebuchet MS';
+    scroll-behavior: smooth;
+}
+
+.nav {
+    z-index: 10;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+
+.NA {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.navc:hover {
+    color: black;
+    background-color: gray;
+    transition: 2s;
+}
+
+.navc:link {
+    color: black;
+}
+
+.navc:visited {
+    color: black;
+}
+
+li {
+    display: block;
+    z-index: 3;
+    top: 0px;
+    width: 100%;
+    display: inline;
+    height: 70px;
+    list-style: none;
+    text-decoration: none;
+    z-index: 2;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+ul {
+    height: 5%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: rgb(255, 208, 0);
+    border-bottom-left-radius: 20% 20%;
+    border-bottom-right-radius: 20% 20%;
+    display: inline-block;
+    margin: 0px;
+}
+
+div {
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+
+.intro {
+    text-align: center;
+    font-size: 2em;
+    width: 99%;
+    border: solid black 2px;
+    background-color: rgb(255, 145, 0);
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    animation-name: intro;
+    animation-duration: 5s;
+}
+
+@keyframes sousmarin {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(10px, 12px);
+    }
+    50% {
+        transform: translate(20px, 7px);
+    }
+    75% {
+        transform: translate(10px, 8px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+h1 {
+    color: rgb(119, 0, 0);
+    text-align: center;
+}
+
+.sousmarin {
+    animation: sousmarin 7s infinite cubic-bezier(0.48, 0.38, 0.72, 0.78);
+    position: fixed;
+    top: 40%;
+    left: 70%;
+    z-index: 2;
+}
+
+.metres:link {
+    color: black;
+    font-size: 2em;
+    font-family: cursive;
+    opacity: 0.2;
+}
+
+.metres:hover {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.bouton:hover {
+    color: black;
+    background-color: gray;
+}
+
+.bouton:link {
+    color: black;
+}
+
+.bouton:visited {
+    color: black;
+}
+
+.container {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.metres {
+    padding: 30px 0px 0px 20px;
+    border-top: 4px solid rgb(5, 0, 48);
+    border-right: 4px solid rgb(5, 0, 48);
+    border-radius: 0px 30px 30px 0px;
+    padding-top: 5%;
+    display: block;
+    min-height: 10%;
+    max-width: 50%;
+    background-color: #87CEEB;
+    text-decoration: none;
+    width: 300px;
+    animation-name: bouton;
+    animation-duration: 5s;
+}
+
+.profondeur {
+    z-index: 3;
+    width: 100%;
+    border-bottom: 6px dashed black;
+    font-family: serif;
+}
+
+.bouton {
+    position: fixed;
+    z-index: 2;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.Haut {
+    bottom: 80px;
+    right: 20px;
+}
+
+.Bas {
+    bottom: 40px;
+    right: 20px;
+}
+
+.P1 {
+    top: 6.7%;
+}
+
+.P2 {
+    top: 14.86%;
+}
+
+.P3 {
+    top: 23.01%;
+}
+
+.P4 {
+    top: 31.16%;
+}
+
+.P5 {
+    top: 39.3%;
+}
+
+.P6 {
+    top: 47.47%;
+}
+
+.P7 {
+    top: 57.32%;
+}
+
+.P8 {
+    top: 63.76%;
+}
+
+.P9 {
+    top: 71.91%;
+}
+
+.P10 {
+    top: 80%;
+}
+
+.P11 {
+    top: 87.5%;
+}
+
+.P12 {
+    top: 95%;
+}
+
+@media screen and (max-width:1000px) {
+    ul {
+        height: 12%;
+    }
+    li {
+        line-height: 35px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .intro {
+        padding-top: 80px;
+        font-size: 1.3em;
+    }
+    .fond {
+        padding-top: 15px;
+    }
+    h1 {
+        top: 50px;
+        margin: 0px;
+        font-size: 1.5em;
+    }
+    h3 {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .nav {
+        display: none;
+    }
+    .intro {
+        padding-top: 0px;
+        margin: 0px;
+    }
+    body {
+        font-size: 0.8em;
+    }
+    h1 {
+        margin: 0px;
+        font-size: 1.5em;
+    }
+    h3 {
+        margin: 0px;
+    }
+}
+
+@keyframes nav {
+    from {
+        background-color: rgb(255, 145, 0);
+    }
+    to {
+        background-color: rgb(255, 208, 0);
+    }
+}
+
+ul {
+    animation-name: nav;
+    animation-duration: 5s;
+}
+
+@keyframes intro {
+    from {
+        background-color: rgb(255, 208, 0);
+        color: rgb(255, 208, 0);
+    }
+    to {
+        background-color: rgb(255, 145, 0);
+    }
+}
+
+@keyframes bouton {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #87CEEB;
+    }
+}
